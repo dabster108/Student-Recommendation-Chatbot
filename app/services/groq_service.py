@@ -1,6 +1,8 @@
 from app.models.conversation import Conversation
 from app.core.config import GROQ_API_KEY
 from groq import Groq
+from app.schemas.chat import UserInput  # Add this line to import UserInput
+
 
 class GroqService:
     def __init__(self):
