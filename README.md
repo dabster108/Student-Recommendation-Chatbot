@@ -1,8 +1,4 @@
-Here's a full `README.md` with badges, setup instructions, and relevant information for your **FastAPI ChatBot using Groq API**. This version includes sections for badges like build status, Python version, and license type, as well as a clean structure.
 
----
-
-```markdown
 # 🗺️ FastAPI ChatBot (Maps-Only) using Groq API
 
 [![Build Status](https://img.shields.io/github/workflow/status/yourusername/FastAPI_ChatBot/CI)](https://github.com/yourusername/FastAPI_ChatBot/actions) 
