@@ -39,29 +39,20 @@ A chatbot powered by FastAPI and Groq's Llama 3.1-8B-Instant model. This project
 
 6. Visit `http://127.0.0.1:8000/docs` for the Swagger UI.
 
-7. Project Structure
-   FastAPI_ChatBot/
-│── app/
+FastApi_ChatBot/
+├── app/
 │   ├── api/v1/endpoints/
-│   │   ├── chat.py
-│   │   ├── __init__.py
+│   │   └── auth.py               # Blank file for auth API routes
 │   ├── core/
-│   │   ├── config.py
-│   │   ├── __init__.py
+│   │   └── security.py           # Blank file for security functions
 │   ├── models/
-│   │   ├── conversation.py
-│   │   ├── __init__.py
+│   │   └── user.py               # Blank file for the User model
 │   ├── schemas/
-│   │   ├── chat.py
-│   │   ├── __init__.py
+│   │   └── auth.py               # Blank file for Pydantic schemas
 │   ├── services/
-│   │   ├── groq_service.py
-│   │   ├── __init__.py
-│   ├── main.py
-│── .env
-│── requirements.txt
-│── README.md
-│── LICENSE
+│   │   └── auth_service.py       # Blank file for auth-related logic
+│   └── main.py                   # Main FastAPI entry point (already present)
+
 
 
 ## License
