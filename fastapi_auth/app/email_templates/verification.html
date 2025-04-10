@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verification</title>
+</head>
+<body>
+    <h1>Email Verification</h1>
+    <div id="message"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        
+        // Send token to backend
+        fetch(`http://localhost:8000/verify-email?token=${token}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('message').innerHTML = 
+                    data.success ? 
+                    '<p style="color:green">Email verified successfully!</p>' :
+                    `<p style="color:red">Error: ${data.detail}</p>`;
+            });
+    </script>
+</body>
+</html>
