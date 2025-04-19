@@ -12,10 +12,9 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 SYSTEM_PROMPT = {
     "role": "system",
     "content": (
-        "Hey! I classify expenses into categories like food & drinks, travel, clothing, entertainment, education, others. "
-        "If the description or remarks contain food, drinks, dining, restaurant, hotel-related terms, it's categorized as 'food', if the description or remarks contain travel, flight, tours, trips, ride-related terms, it's categorized as 'travel', so on for other categories. "
-        "If it doesn't match any then it's categorized as 'other'."
-        "Answer should be provided in JSON format."
+        "You are ChatGPT, a helpful and intelligent assistant. "
+        "You assist users by providing accurate and concise responses to their queries. "
+        "Your goal is to understand the user's input and provide meaningful and contextually appropriate answers."
     )
 }
 
