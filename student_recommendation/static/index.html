@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Recommendation System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .message {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .recommendation-section {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        .student-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .student-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .student-info p {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .search-box textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+            font-family: inherit;
+        }
+
+        .search-box textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .keywords-display {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ffc107;
+        }
+
+        .keywords-display strong {
+            color: #856404;
+        }
+
+        .keywords-display span {
+            display: inline-block;
+            background: #ffc107;
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin: 4px;
+            font-size: 12px;
+        }
+
+        .recommendations {
+            margin-top: 20px;
+        }
+
+        .forum-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .forum-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 10px;
+        }
+
+        .forum-title {
+            color: #667eea;
+            font-size: 18px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .similarity-score {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .forum-category {
+            display: inline-block;
+            background: #e7f3ff;
+            color: #0066cc;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .forum-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .forum-stats {
+            display: flex;
+            gap: 20px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .forum-stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .forum-tags {
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #666;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .no-results h3 {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .student-detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .student-detail:last-child {
+            border-bottom: none;
+        }
+
+        .student-detail .label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .student-detail .value {
+            color: #666;
+        }
+
+        .category-tabs {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: #f0f3ff;
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .category-title {
+            color: #667eea;
+            margin: 20px 0 15px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Onboarding Form -->
+        <div id="onboardingSection">
+            <h1>Student Onboarding</h1>
+            <p class="subtitle">Welcome! Please fill in your details to get started</p>
+
+            <div id="messageBox"></div>
+
+            <form id="onboardingForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" required placeholder="Choose a unique username">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address *</label>
+                    <input type="text" id="address" required placeholder="Enter your address">
+                </div>
+
+                <div class="form-group">
+                    <label for="faculty">Faculty *</label>
+                    <select id="faculty" required>
+                        <option value="">Select your faculty</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Science">Science</option>
+                        <option value="Business">Business</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Law">Law</option>
+                        <option value="Education">Education</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="grade">Grade/Year *</label>
+                    <select id="grade" required>
+                        <option value="">Select your grade</option>
+                        <option value="Freshman">Freshman (1st Year)</option>
+                        <option value="Sophomore">Sophomore (2nd Year)</option>
+                        <option value="Junior">Junior (3rd Year)</option>
+                        <option value="Senior">Senior (4th Year)</option>
+                        <option value="Graduate">Graduate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Interests (comma-separated, optional)</label>
+                    <input type="text" id="interests" placeholder="e.g., programming, sports, music">
+                </div>
+
+                <div class="form-group">
+                    <label for="courses">Courses Enrolled (comma-separated, optional)</label>
+                    <input type="text" id="courses" placeholder="e.g., Data Structures, Physics 101">
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn">Complete Onboarding</button>
+            </form>
+        </div>
+
+        <!-- Recommendation Section (Hidden Initially) -->
+                <!-- Recommendation Section (Hidden Initially) -->
+        <div id="recommendationSection" class="hidden">
+            <h1>Recommendations</h1>
+            <p class="subtitle">AI-powered recommendations based on your interests</p>
+
+            <div class="card" id="studentInfo">
+                <!-- Student info will be inserted here -->
+            </div>
+
+            <!-- Category Navigation Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="forums">Forums</button>
+                <button class="tab-btn" data-category="learning">Learning</button>
+                <button class="tab-btn" data-category="wellness">Wellness</button>
+                <button class="tab-btn" data-category="opportunities">Opportunities</button>
+                <button class="tab-btn" data-category="events">Events</button>
+                <button class="tab-btn" data-category="scholarships">Scholarships</button>
+                <button class="tab-btn" data-category="flashcards">Flashcards</button>
+                <button class="tab-btn" data-category="qna">Q&A</button>
+                <button class="tab-btn" data-category="truefalse">True/False</button>
+                <button class="tab-btn" data-category="mcq">MCQ</button>
+                <button class="tab-btn" data-category="confessions">Confessions</button>
+            </div>
+
+            <div class="search-box">
+                <textarea id="searchQuery" placeholder="What are you looking for? (e.g., 'I want to learn about physics and engineering')" rows="3"></textarea>
+                <button class="btn" id="searchBtn">Get Recommendations</button>
+            </div>
+
+            <div id="keywordsBox" class="hidden"></div>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        // Always start with onboarding form (fresh start)
+        // Comment out the auto-load logic below if you want fresh start every time
+        /*
+        window.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch(`${API_BASE}/student`);
+                if (response.ok) {
+                    const student = await response.json();
+                    showRecommendationSection(student);
+                }
+            } catch (error) {
+                console.log('No student profile found, showing onboarding');
+            }
+        });
+        */
+
+        // Handle onboarding form submission
+        document.getElementById('onboardingForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Saving...';
+
+            const interestsInput = document.getElementById('interests').value;
+            const coursesInput = document.getElementById('courses').value;
+
+            const studentData = {
+                name: document.getElementById('name').value,
+                username: document.getElementById('username').value,
+                address: document.getElementById('address').value,
+                faculty: document.getElementById('faculty').value,
+                grade: document.getElementById('grade').value,
+                interests: interestsInput ? interestsInput.split(',').map(i => i.trim()) : [],
+                courses_enrolled: coursesInput ? coursesInput.split(',').map(c => c.trim()) : []
+            };
+
+            try {
+                const response = await fetch(`${API_BASE}/onboard`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(studentData)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    showMessage('Onboarding successful! Loading recommendations...', 'success');
+                    setTimeout(() => {
+                        showRecommendationSection(result.student);
+                    }, 1500);
+                } else {
+                    const error = await response.json();
+                    showMessage(`Error: ${error.detail}`, 'error');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Complete Onboarding';
+                }
+            } catch (error) {
+                showMessage(`Connection error: ${error.message}`, 'error');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Complete Onboarding';
+            }
+        });
+
+        let currentCategory = 'forums'; // Default category
+
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active tab
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Update current category
+                currentCategory = btn.dataset.category;
+                
+                // Clear results
+                document.getElementById('resultsContainer').innerHTML = '';
+                document.getElementById('keywordsBox').classList.add('hidden');
+            });
+        });
+
+        // Handle search/recommendation
+        document.getElementById('searchBtn').addEventListener('click', async () => {
+            const query = document.getElementById('searchQuery').value.trim();
+            
+            if (!query) {
+                alert('Please enter a search query');
+                return;
+            }
+
+            const searchBtn = document.getElementById('searchBtn');
+            searchBtn.disabled = true;
+            searchBtn.textContent = 'Searching...';
+
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = '<div class="loading"><div class="spinner"></div><p>Extracting keywords with Groq AI...</p></div>';
+
+            try {
+                const response = await fetch(`${API_BASE}/recommend/${currentCategory}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayResults(data);
+                } else {
+                    const error = await response.json();
+                    resultsContainer.innerHTML = `<div class="error">Error: ${error.detail}</div>`;
+                }
+            } catch (error) {
+                resultsContainer.innerHTML = `<div class="error">Connection error: ${error.message}</div>`;
+            } finally {
+                searchBtn.disabled = false;
+                searchBtn.textContent = 'Get Recommendations';
+            }
+        });
+
+        function showMessage(message, type) {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.innerHTML = `<div class="message ${type}">${message}</div>`;
+            setTimeout(() => {
+                messageBox.innerHTML = '';
+            }, 3000);
+        }
+
+        function showRecommendationSection(student) {
+            document.getElementById('onboardingSection').classList.add('hidden');
+            document.getElementById('recommendationSection').classList.remove('hidden');
+            
+            const studentInfo = document.getElementById('studentInfo');
+            
+            let interestsHtml = '';
+            if (student.interests && student.interests.length > 0) {
+                interestsHtml = `
+                    <div class="student-detail">
+                        <span class="label">Interests:</span>
+                        <span class="value">${student.interests.join(', ')}</span>
+                    </div>
+                `;
+            }
+            
+            let coursesHtml = '';
+            if (student.courses_enrolled && student.courses_enrolled.length > 0) {
+                coursesHtml = `
+                    <div class="student-detail">
+                        <span class="label">Courses Enrolled:</span>
+                        <span class="value">${student.courses_enrolled.join(', ')}</span>
+                    </div>
+                `;
+            }
+            
+            studentInfo.innerHTML = `
+                <h3>Welcome, ${student.name}!</h3>
+                <div class="student-detail">
+                    <span class="label">Username:</span>
+                    <span class="value">${student.username}</span>
+                </div>
+                <div class="student-detail">
+                    <span class="label">Faculty:</span>
+                    <span class="value">${student.faculty}</span>
+                </div>
+                <div class="student-detail">
+                    <span class="label">Grade:</span>
+                    <span class="value">${student.grade}</span>
+                </div>
+                ${interestsHtml}
+                ${coursesHtml}
+            `;
+        }
+
+        function displayResults(data) {
+            const keywordsBox = document.getElementById('keywordsBox');
+            const resultsContainer = document.getElementById('resultsContainer');
+
+            // Display extracted keywords
+            if (data.extracted_keywords && data.extracted_keywords.length > 0) {
+                keywordsBox.classList.remove('hidden');
+                keywordsBox.innerHTML = `
+                    <div class="keywords-display">
+                        <strong>Extracted Keywords:</strong><br>
+                        ${data.extracted_keywords.map(kw => `<span>${kw}</span>`).join('')}
+                    </div>
+                `;
+            }
+
+            // Filter recommendations with similarity > 0
+            const validRecommendations = data.recommendations.filter(
+                forum => forum.similarity_score > 0
+            );
+
+            // Display recommendations
+            if (validRecommendations && validRecommendations.length > 0) {
+                const categoryName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+                resultsContainer.innerHTML = `
+                    <div class="recommendations">
+                        <h3 class="category-title">Recommended ${categoryName} (${validRecommendations.length})</h3>
+                        ${validRecommendations.map(item => createRecommendationCard(item)).join('')}
+                    </div>
+                `;
+            } else {
+                const categoryName = currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
+                        <h3>No Recommendations Found</h3>
+                        <p>No matching ${categoryName.toLowerCase()} found for your query.</p>
+                        <p style="font-size: 14px; margin-top: 10px;">Try different keywords or search terms</p>
+                    </div>
+                `;
+            }
+        }
+
+        function createRecommendationCard(item) {
+            const matchPercentage = (item.similarity_score * 100).toFixed(1);
+            
+            // Get title (handle different field names)
+            const title = item.title || item.name || item.question || 'Untitled';
+            
+            // Get description (handle different field names)
+            const description = item.description || item.content || item.details || '';
+            
+            // Get tags if available
+            let tagsHtml = '';
+            if (item.tags && Array.isArray(item.tags)) {
+                tagsHtml = `
+                    <div class="forum-tags">
+                        ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                `;
+            }
+            
+            // Get content type badge if available
+            let contentTypeBadge = '';
+            if (item.content_type) {
+                const typeLabel = item.content_type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                contentTypeBadge = `<span class="tag" style="background: #764ba2; color: white;">${typeLabel}</span>`;
+            }
+            
+            // Get stats if available (for forums, events, etc.)
+            let statsHtml = '';
+            if (item.member_count && item.post_count) {
+                statsHtml = `
+                    <div class="forum-stats">
+                        <div class="forum-stat">
+                            <strong>${item.member_count}</strong> Members
+                        </div>
+                        <div class="forum-stat">
+                            <strong>${item.post_count}</strong> Posts
+                        </div>
+                    </div>
+                `;
+            } else if (item.participants) {
+                statsHtml = `
+                    <div class="forum-stats">
+                        <div class="forum-stat">
+                            <strong>${item.participants}</strong> Participants
+                        </div>
+                    </div>
+                `;
+            } else if (item.duration) {
+                statsHtml = `
+                    <div class="forum-stats">
+                        <div class="forum-stat">
+                            <strong>Duration:</strong> ${item.duration}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            return `
+                <div class="forum-card">
+                    <div class="forum-header">
+                        <h4 class="forum-title">${title}</h4>
+                        <span class="similarity-badge">${matchPercentage}% Match</span>
+                    </div>
+                    ${contentTypeBadge}
+                    <p class="forum-description">${description}</p>
+                    ${tagsHtml}
+                    ${statsHtml}
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

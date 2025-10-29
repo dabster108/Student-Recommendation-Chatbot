@@ -1,0 +1,1829 @@
+{
+  "forums": [
+    {
+      "id": "forum1",
+      "title": "Career Paths for Engineers",
+      "category": "Career",
+      "description": "Discussing possible career options for engineering students after graduation.",
+      "member_count": 120,
+      "post_count": 345,
+      "tags": ["engineering careers","internships","jobs"],
+      "recommended_for": ["Engineering","Junior","Senior"]
+    },
+    {
+      "id": "forum2",
+      "title": "Study Strategies for Freshman",
+      "category": "Academic",
+      "description": "Share your tips and tricks to succeed in your first year of college.",
+      "member_count": 200,
+      "post_count": 520,
+      "tags": ["study tips","time management","freshman"],
+      "recommended_for": ["All Faculties","Freshman"]
+    },
+    {
+      "id": "forum3",
+      "title": "Tech Trends and Gadgets",
+      "category": "Technology",
+      "description": "A place to talk about latest gadgets, software tools and tech hacks for students.",
+      "member_count": 150,
+      "post_count": 400,
+      "tags": ["gadgets","software","hacks","tech"],
+      "recommended_for": ["Engineering","Science","Sophomore","Junior"]
+    },
+    {
+      "id": "forum4",
+      "title": "Social Events and Campus Life",
+      "category": "Social",
+      "description": "Organizing and discussing upcoming social events on campus and how to make connections.",
+      "member_count": 300,
+      "post_count": 760,
+      "tags": ["campus life","events","networking","social"],
+      "recommended_for": ["All Faculties","Freshman","Sophomore"]
+    },
+    {
+      "id": "forum5",
+      "title": "Mental Health for Students",
+      "category": "Health",
+      "description": "Open forum for students to discuss mental wellbeing, stress, and share coping techniques.",
+      "member_count": 180,
+      "post_count": 425,
+      "tags": ["mental health","stress","wellbeing","support"],
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    },
+    {
+      "id": "forum6",
+      "title": "Business Start-Up Ideas",
+      "category": "Career",
+      "description": "Brainstorm business ideas, side-hustles and entrepreneurial ventures for business students.",
+      "member_count": 110,
+      "post_count": 290,
+      "tags": ["entrepreneurship","business ideas","start-up","side hustle"],
+      "recommended_for": ["Business","Junior","Senior"]
+    },
+    {
+      "id": "forum7",
+      "title": "Science Research Opportunities",
+      "category": "Academic",
+      "description": "Discuss research projects, journals and conferences for science faculty students.",
+      "member_count": 95,
+      "post_count": 210,
+      "tags": ["research","science","conference","journal"],
+      "recommended_for": ["Science","Junior","Senior"]
+    },
+    {
+      "id": "forum8",
+      "title": "Design & Creativity Club",
+      "category": "Social",
+      "description": "A creative space for arts, design and media students to share work and collaborate.",
+      "member_count": 130,
+      "post_count": 330,
+      "tags": ["design","creativity","arts","media"],
+      "recommended_for": ["Arts","Freshman","Sophomore"]
+    },
+    {
+      "id": "forum9",
+      "title": "Health & Nutrition Talk",
+      "category": "Health",
+      "description": "Tips on nutrition, healthy eating habits, and wellness routines for busy students.",
+      "member_count": 140,
+      "post_count": 260,
+      "tags": ["nutrition","health habits","wellness","student life"],
+      "recommended_for": ["All Faculties","Sophomore","Junior"]
+    },
+    {
+      "id": "forum10",
+      "title": "Coding Help – Beginners to Experts",
+      "category": "Technology",
+      "description": "Ask questions, share code and collaborate on programming projects.",
+      "member_count": 250,
+      "post_count": 980,
+      "tags": ["coding","programming help","python","java","beginners"],
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"]
+    }
+  ],
+
+  "bundles": [
+    {
+      "id": "bundle1",
+      "title": "Intro to Programming for Engineers",
+      "description": "A bundle of foundational courses to kick off your programming journey in engineering.",
+      "included_courses": ["Programming Fundamentals", "Python for Engineers", "Data Structures Intro"],
+      "duration_weeks": 8,
+      "difficulty_level": "Beginner",
+      "target_faculty": ["Engineering"],
+      "target_grade": ["Freshman","Sophomore"],
+      "price": 0
+    },
+    {
+      "id": "bundle2",
+      "title": "Business Analytics Mastery",
+      "description": "Bundle covering business analytics tools, dashboards and decision making.",
+      "included_courses": ["Excel for Analysts", "Power BI Essentials", "Data Visualization for Business"],
+      "duration_weeks": 10,
+      "difficulty_level": "Intermediate",
+      "target_faculty": ["Business"],
+      "target_grade": ["Sophomore","Junior"],
+      "price": 49.99
+    },
+    {
+      "id": "bundle3",
+      "title": "Creative Design & Media Pack",
+      "description": "Courses bundled for design, media production and visual creativity.",
+      "included_courses": ["Graphic Design Basics", "Video Editing Essentials", "UX/UI Fundamentals"],
+      "duration_weeks": 6,
+      "difficulty_level": "Beginner",
+      "target_faculty": ["Arts","Engineering"],
+      "target_grade": ["Freshman","Sophomore"],
+      "price": 29.99
+    },
+    {
+      "id": "bundle4",
+      "title": "Advanced Machine Learning Track",
+      "description": "Deep dive into ML algorithms, neural networks and applications.",
+      "included_courses": ["Machine Learning A-Z", "Deep Learning with TensorFlow", "Applied AI Projects"],
+      "duration_weeks": 12,
+      "difficulty_level": "Advanced",
+      "target_faculty": ["Engineering","Science"],
+      "target_grade": ["Junior","Senior"],
+      "price": 149.99
+    },
+    {
+      "id": "bundle5",
+      "title": "Healthcare Innovation Bundle",
+      "description": "Courses addressing healthcare technology, innovation and management for medical students.",
+      "included_courses": ["Healthcare Technology 101", "Medical Innovation and Entrepreneurship", "Healthcare Data Analytics"],
+      "duration_weeks": 9,
+      "difficulty_level": "Intermediate",
+      "target_faculty": ["Medicine","Business"],
+      "target_grade": ["Sophomore","Junior"],
+      "price": 79.99
+    },
+    {
+      "id": "bundle6",
+      "title": "Science Fundamentals Pack",
+      "description": "Essential science courses for a strong foundation in general science faculty.",
+      "included_courses": ["General Chemistry", "Physics I", "Biology Basics"],
+      "duration_weeks": 7,
+      "difficulty_level": "Beginner",
+      "target_faculty": ["Science"],
+      "target_grade": ["Freshman","Sophomore"],
+      "price": 19.99
+    },
+    {
+      "id": "bundle7",
+      "title": "Leadership & Soft Skills Bundle",
+      "description": "Improve your leadership, communication and teamwork skills applicable to any faculty.",
+      "included_courses": ["Effective Communication", "Team Leadership Essentials", "Personal Productivity"],
+      "duration_weeks": 5,
+      "difficulty_level": "Beginner",
+      "target_faculty": ["All Faculties"],
+      "target_grade": ["Freshman","Sophomore","Junior"],
+      "price": 9.99
+    },
+    {
+      "id": "bundle8",
+      "title": "Entrepreneurship for Arts & Media",
+      "description": "Bundle for creative students interested in starting ventures in arts and media.",
+      "included_courses": ["Creative Business Models", "Media Start-up Workshop", "Branding for Creatives"],
+      "duration_weeks": 8,
+      "difficulty_level": "Intermediate",
+      "target_faculty": ["Arts","Business"],
+      "target_grade": ["Junior","Senior"],
+      "price": 59.99
+    },
+    {
+      "id": "bundle9",
+      "title": "Advanced Design Systems",
+      "description": "For senior design students exploring systems thinking and advanced design methods.",
+      "included_courses": ["Design Systems Theory", "UX Research Methods", "Inclusive Design"],
+      "duration_weeks": 10,
+      "difficulty_level": "Advanced",
+      "target_faculty": ["Arts","Engineering"],
+      "target_grade": ["Senior"],
+      "price": 99.99
+    },
+    {
+      "id": "bundle10",
+      "title": "Global Business Strategy Bundle",
+      "description": "Comprehensive strategy courses for business seniors preparing for global roles.",
+      "included_courses": ["Global Strategy Simulation", "International Markets", "M&A Fundamentals"],
+      "duration_weeks": 11,
+      "difficulty_level": "Advanced",
+      "target_faculty": ["Business"],
+      "target_grade": ["Senior"],
+      "price": 129.99
+    }
+  ],
+
+  "learning_courses": [
+    {
+      "id": "course1",
+      "title": "Programming Fundamentals",
+      "instructor": "Dr. Ayesha Khan",
+      "description": "Learn the basics of programming concepts and logic using Python.",
+      "duration_hours": 20,
+      "difficulty_level": "Beginner",
+      "category": "Programming",
+      "rating": 4.5,
+      "enrolled_students": 320,
+      "recommended_for": ["Engineering","Freshman","Sophomore"],
+      "tags": ["python","programming basics","logic"]
+    },
+    {
+      "id": "course2",
+      "title": "Excel for Analysts",
+      "instructor": "Mr. Brian Lee",
+      "description": "Master Excel tools and functions for business analytics.",
+      "duration_hours": 15,
+      "difficulty_level": "Beginner",
+      "category": "Business",
+      "rating": 4.2,
+      "enrolled_students": 240,
+      "recommended_for": ["Business","Freshman","Sophomore"],
+      "tags": ["excel","analytics","business tools"]
+    },
+    {
+      "id": "course3",
+      "title": "Data Visualization for Business",
+      "instructor": "Ms. Carla Martín",
+      "description": "Visualize business data using charts and storytelling techniques.",
+      "duration_hours": 18,
+      "difficulty_level": "Intermediate",
+      "category": "Business",
+      "rating": 4.7,
+      "enrolled_students": 180,
+      "recommended_for": ["Business","Junior","Senior"],
+      "tags": ["data viz","dashboard","business intelligence"]
+    },
+    {
+      "id": "course4",
+      "title": "Graphic Design Basics",
+      "instructor": "Prof. David Sun",
+      "description": "Explore color theory, typography and layout in design projects.",
+      "duration_hours": 12,
+      "difficulty_level": "Beginner",
+      "category": "Design",
+      "rating": 4.3,
+      "enrolled_students": 210,
+      "recommended_for": ["Arts","Freshman","Sophomore"],
+      "tags": ["design","graphics","typography"]
+    },
+    {
+      "id": "course5",
+      "title": "Machine Learning A-Z",
+      "instructor": "Dr. Emily Zhao",
+      "description": "Comprehensive machine learning course with real-world projects.",
+      "duration_hours": 30,
+      "difficulty_level": "Advanced",
+      "category": "Programming",
+      "rating": 4.8,
+      "enrolled_students": 145,
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "tags": ["machine learning","AI","neural networks"]
+    },
+    {
+      "id": "course6",
+      "title": "General Chemistry",
+      "instructor": "Dr. Frank Müller",
+      "description": "Essential chemistry concepts for beginning science students.",
+      "duration_hours": 22,
+      "difficulty_level": "Beginner",
+      "category": "Science",
+      "rating": 4.1,
+      "enrolled_students": 260,
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "tags": ["chemistry","science fundamentals","periodic table"]
+    },
+    {
+      "id": "course7",
+      "title": "Healthcare Technology 101",
+      "instructor": "Dr. Grace Patel",
+      "description": "Introduction to technology applications in healthcare settings.",
+      "duration_hours": 16,
+      "difficulty_level": "Intermediate",
+      "category": "Science",
+      "rating": 4.4,
+      "enrolled_students": 175,
+      "recommended_for": ["Medicine","Business","Sophomore","Junior"],
+      "tags": ["healthtech","innovation","medical devices"]
+    },
+    {
+      "id": "course8",
+      "title": "Effective Communication",
+      "instructor": "Ms. Hannah Brown",
+      "description": "Build strong communication and presentation skills for professionals.",
+      "duration_hours": 10,
+      "difficulty_level": "Beginner",
+      "category": "Business",
+      "rating": 4.6,
+      "enrolled_students": 300,
+      "recommended_for": ["All Faculties","Freshman","Sophomore"],
+      "tags": ["communication","soft skills","presentation"]
+    },
+    {
+      "id": "course9",
+      "title": "UX Research Methods",
+      "instructor": "Prof. Ian Thompson",
+      "description": "Learn research methodologies for user experience and design thinking.",
+      "duration_hours": 14,
+      "difficulty_level": "Advanced",
+      "category": "Design",
+      "rating": 4.5,
+      "enrolled_students": 130,
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "tags": ["ux","research","design thinking"]
+    },
+    {
+      "id": "course10",
+      "title": "Personal Productivity",
+      "instructor": "Mr. Jack Nguyen",
+      "description": "Optimize your productivity habits and time-management systems.",
+      "duration_hours": 8,
+      "difficulty_level": "Beginner",
+      "category": "Business",
+      "rating": 4.0,
+      "enrolled_students": 280,
+      "recommended_for": ["All Faculties","Junior","Senior"],
+      "tags": ["productivity","time management","habits"]
+    }
+  ],
+
+  "learning_sets": [
+    {
+      "id": "set1",
+      "title": "Python Basics Set",
+      "subject": "Programming",
+      "topic_count": 6,
+      "description": "A set of beginner topics to learn Python syntax and logic.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dr. Ayesha Khan",
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"],
+      "estimated_time_minutes": 180
+    },
+    {
+      "id": "set2",
+      "title": "Excel Toolkit",
+      "subject": "Business Analytics",
+      "topic_count": 5,
+      "description": "Essential Excel functions and tools for business analysis.",
+      "difficulty_level": "Beginner",
+      "created_by": "Mr. Brian Lee",
+      "recommended_for": ["Business","Sophomore","Junior"],
+      "estimated_time_minutes": 150
+    },
+    {
+      "id": "set3",
+      "title": "Machine Learning Concepts",
+      "subject": "Programming",
+      "topic_count": 8,
+      "description": "Key concepts every ML student should know.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Dr. Emily Zhao",
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "estimated_time_minutes": 240
+    },
+    {
+      "id": "set4",
+      "title": "Design Thinking Quickset",
+      "subject": "Design",
+      "topic_count": 4,
+      "description": "Introduce you to the design thinking process and tools.",
+      "difficulty_level": "Beginner",
+      "created_by": "Prof. David Sun",
+      "recommended_for": ["Arts","Engineering","Freshman","Sophomore"],
+      "estimated_time_minutes": 100
+    },
+    {
+      "id": "set5",
+      "title": "Healthcare Data Fundamentals",
+      "subject": "Science",
+      "topic_count": 7,
+      "description": "Foundational topics in healthcare data and analytics.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Dr. Grace Patel",
+      "recommended_for": ["Medicine","Business","Sophomore","Junior"],
+      "estimated_time_minutes": 200
+    },
+    {
+      "id": "set6",
+      "title": "Team Leadership Essentials",
+      "subject": "Business",
+      "topic_count": 5,
+      "description": "Topics to help you lead teams and manage projects effectively.",
+      "difficulty_level": "Beginner",
+      "created_by": "Ms. Hannah Brown",
+      "recommended_for": ["All Faculties","Junior","Senior"],
+      "estimated_time_minutes": 120
+    },
+    {
+      "id": "set7",
+      "title": "Advanced UX Research",
+      "subject": "Design",
+      "topic_count": 9,
+      "description": "In-depth exploration of user research and testing methods.",
+      "difficulty_level": "Advanced",
+      "created_by": "Prof. Ian Thompson",
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "estimated_time_minutes": 300
+    },
+    {
+      "id": "set8",
+      "title": "Physics I Companion Set",
+      "subject": "Science",
+      "topic_count": 6,
+      "description": "A supporting set for Physics I including problem solving and theory.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dr. Frank Müller",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "estimated_time_minutes": 170
+    },
+    {
+      "id": "set9",
+      "title": "Creative Brand Building",
+      "subject": "Business",
+      "topic_count": 4,
+      "description": "Topics focused on brand strategy and creative marketing for art students.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Ms. Carla Martín",
+      "recommended_for": ["Arts","Business","Junior","Senior"],
+      "estimated_time_minutes": 130
+    },
+    {
+      "id": "set10",
+      "title": "Nutrition & Student Wellness",
+      "subject": "Health",
+      "topic_count": 3,
+      "description": "Short set on nutrition basics and student healthy habits.",
+      "difficulty_level": "Beginner",
+      "created_by": "Wellness Team",
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"],
+      "estimated_time_minutes": 90
+    }
+  ],
+
+  "practice_sets": [
+    {
+      "id": "pset1",
+      "title": "Python Basics – Practice",
+      "subject": "Programming",
+      "question_count": 20,
+      "difficulty_level": "Beginner",
+      "time_limit_minutes": 30,
+      "description": "Practice questions for basic Python programming syntax.",
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"],
+      "topics_covered": ["variables","loops","functions"]
+    },
+    {
+      "id": "pset2",
+      "title": "Excel Function Drills",
+      "subject": "Business",
+      "question_count": 25,
+      "difficulty_level": "Beginner",
+      "time_limit_minutes": 35,
+      "description": "Drill your Excel skills with business-case questions.",
+      "recommended_for": ["Business","Freshman","Sophomore"],
+      "topics_covered": ["pivot tables","vlookup","charts"]
+    },
+    {
+      "id": "pset3",
+      "title": "Machine Learning Concept Quiz",
+      "subject": "Programming",
+      "question_count": 30,
+      "difficulty_level": "Intermediate",
+      "time_limit_minutes": 45,
+      "description": "Quiz covering core machine learning concepts and terminology.",
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "topics_covered": ["regression","classification","neural networks"]
+    },
+    {
+      "id": "pset4",
+      "title": "Chemistry Fundamentals Practice",
+      "subject": "Science",
+      "question_count": 22,
+      "difficulty_level": "Beginner",
+      "time_limit_minutes": 40,
+      "description": "Practice set on basic chemistry topics for science students.",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["periodic table","chemical reactions","stoichiometry"]
+    },
+    {
+      "id": "pset5",
+      "title": "UX Research Methodology Test",
+      "subject": "Design",
+      "question_count": 18,
+      "difficulty_level": "Advanced",
+      "time_limit_minutes": 30,
+      "description": "High-level practice set for senior UX research students.",
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "topics_covered": ["user interviews","usability testing","data analysis"]
+    },
+    {
+      "id": "pset6",
+      "title": "Leadership Scenario Questions",
+      "subject": "Business",
+      "question_count": 20,
+      "difficulty_level": "Intermediate",
+      "time_limit_minutes": 25,
+      "description": "Practice real‐world leadership and project management scenarios.",
+      "recommended_for": ["Business","Junior","Senior"],
+      "topics_covered": ["team conflict","project planning","communication"]
+    },
+    {
+      "id": "pset7",
+      "title": "Nutrition Habits Practice Quiz",
+      "subject": "Health",
+      "question_count": 15,
+      "difficulty_level": "Beginner",
+      "time_limit_minutes": 20,
+      "description": "Quiz to test your knowledge of good student nutrition habits.",
+      "recommended_for": ["All Faculties","Freshman","Sophomore"],
+      "topics_covered": ["macros","meal planning","hydration"]
+    },
+    {
+      "id": "pset8",
+      "title": "Data Visualization Practice",
+      "subject": "Business",
+      "question_count": 28,
+      "difficulty_level": "Intermediate",
+      "time_limit_minutes": 40,
+      "description": "Practice questions on creating and interpreting business visualisations.",
+      "recommended_for": ["Business","Sophomore","Junior"],
+      "topics_covered": ["charts","dashboards","storytelling"]
+    },
+    {
+      "id": "pset9",
+      "title": "Physics Problem Drill",
+      "subject": "Science",
+      "question_count": 24,
+      "difficulty_level": "Beginner",
+      "time_limit_minutes": 50,
+      "description": "Problem-solving set for first-year physics students.",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["kinematics","forces","energy"]
+    },
+    {
+      "id": "pset10",
+      "title": "Media Branding Practice Set",
+      "subject": "Business",
+      "question_count": 17,
+      "difficulty_level": "Intermediate",
+      "time_limit_minutes": 30,
+      "description": "Practice set for branding and media marketing topics.",
+      "recommended_for": ["Arts","Business","Junior","Senior"],
+      "topics_covered": ["brand strategy","social media","creative campaigns"]
+    }
+  ],
+
+  "wellness_challenges": [
+    {
+      "id": "wc1",
+      "title": "7-Day Morning Yoga Challenge",
+      "description": "Start each morning with 15 minutes of yoga for a week.",
+      "duration_days": 7,
+      "category": "Physical",
+      "difficulty_level": "Beginner",
+      "participant_count": 120,
+      "points_reward": 70
+    },
+    {
+      "id": "wc2",
+      "title": "14-Day Digital Detox",
+      "description": "Reduce screen time to under 2 hours/day for 14 days.",
+      "duration_days": 14,
+      "category": "Mental",
+      "difficulty_level": "Intermediate",
+      "participant_count": 80,
+      "points_reward": 120
+    },
+    {
+      "id": "wc3",
+      "title": "30-Day Step Count Quest",
+      "description": "Walk 10,000 steps each day for 30 days straight.",
+      "duration_days": 30,
+      "category": "Physical",
+      "difficulty_level": "Advanced",
+      "participant_count": 50,
+      "points_reward": 300
+    },
+    {
+      "id": "wc4",
+      "title": "Healthy Eating Week",
+      "description": "Eat at least 5 servings of fruits & veggies daily for a week.",
+      "duration_days": 7,
+      "category": "Nutrition",
+      "difficulty_level": "Beginner",
+      "participant_count": 150,
+      "points_reward": 60
+    },
+    {
+      "id": "wc5",
+      "title": "Mindful Meditation 10-Day",
+      "description": "Practice 10 minutes of guided meditation for 10 days.",
+      "duration_days": 10,
+      "category": "Mental",
+      "difficulty_level": "Beginner",
+      "participant_count": 130,
+      "points_reward": 90
+    },
+    {
+      "id": "wc6",
+      "title": "Campus Social Kindness Challenge",
+      "description": "Perform one kind act on campus every day for two weeks.",
+      "duration_days": 14,
+      "category": "Social",
+      "difficulty_level": "Intermediate",
+      "participant_count": 95,
+      "points_reward": 110
+    },
+    {
+      "id": "wc7",
+      "title": "Sleep Hygiene 21-Day Plan",
+      "description": "Go to bed by 11pm and wake by 7am for 21 days.",
+      "duration_days": 21,
+      "category": "Wellness",
+      "difficulty_level": "Intermediate",
+      "participant_count": 75,
+      "points_reward": 140
+    },
+    {
+      "id": "wc8",
+      "title": "Hydration Boost 5-Day",
+      "description": "Drink 8+ glasses of water daily for 5 days.",
+      "duration_days": 5,
+      "category": "Nutrition",
+      "difficulty_level": "Beginner",
+      "participant_count": 180,
+      "points_reward": 50
+    },
+    {
+      "id": "wc9",
+      "title": "Group Fitness Sprint Week",
+      "description": "Join group workout sessions daily for a week.",
+      "duration_days": 7,
+      "category": "Physical",
+      "difficulty_level": "Intermediate",
+      "participant_count": 60,
+      "points_reward": 100
+    },
+    {
+      "id": "wc10",
+      "title": "Stress-Free Month Challenge",
+      "description": "Use stress reduction techniques daily for one month.",
+      "duration_days": 30,
+      "category": "Mental",
+      "difficulty_level": "Advanced",
+      "participant_count": 40,
+      "points_reward": 250
+    }
+  ],
+
+  "wellness_content": [
+    {
+      "id": "wcContent1",
+      "title": "Guide: How to Manage Student Stress",
+      "content_type": "Guide",
+      "description": "Practical guide on identifying stress triggers and coping strategies.",
+      "duration_minutes": 15,
+      "category": "Stress Management",
+      "author": "Dr. Zoe Brooks",
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    },
+    {
+      "id": "wcContent2",
+      "title": "Podcast: Sleep Better Tonight",
+      "content_type": "Podcast",
+      "description": "A podcast episode on improving sleep habits for busy students.",
+      "duration_minutes": 25,
+      "category": "Sleep",
+      "author": "Healthy Minds Podcast",
+      "recommended_for": ["All Faculties","Sophomore","Junior","Senior"]
+    },
+    {
+      "id": "wcContent3",
+      "title": "Video: Quick Campus Workout",
+      "content_type": "Video",
+      "description": "15-minute cardio workout you can do between classes.",
+      "duration_minutes": 15,
+      "category": "Fitness",
+      "author": "CampusFit Channel",
+      "recommended_for": ["All Faculties","Freshman","Sophomore"]
+    },
+    {
+      "id": "wcContent4",
+      "title": "Article: Nutrition Basics for Students",
+      "content_type": "Article",
+      "description": "What to eat and what to avoid while managing student life and deadlines.",
+      "duration_minutes": 10,
+      "category": "Nutrition",
+      "author": "Ms. Linda Green",
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    },
+    {
+      "id": "wcContent5",
+      "title": "Guide: Mindful Breathing Techniques",
+      "content_type": "Guide",
+      "description": "Step-by-step breathing exercises to calm your mind before exams.",
+      "duration_minutes": 12,
+      "category": "Mental Health",
+      "author": "Dr. Kevin Smith",
+      "recommended_for": ["All Faculties","Junior","Senior"]
+    },
+    {
+      "id": "wcContent6",
+      "title": "Video: Yoga for Busy Students",
+      "content_type": "Video",
+      "description": "Short yoga session you can fit into a busy exam week.",
+      "duration_minutes": 20,
+      "category": "Fitness",
+      "author": "YogaCampus Studios",
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    },
+    {
+      "id": "wcContent7",
+      "title": "Podcast: Overcoming Social Anxiety",
+      "content_type": "Podcast",
+      "description": "Experts talk about social anxiety and how students can manage it on campus.",
+      "duration_minutes": 30,
+      "category": "Mental Health",
+      "author": "Student Wellness Hub",
+      "recommended_for": ["All Faculties","Sophomore","Junior","Senior"]
+    },
+    {
+      "id": "wcContent8",
+      "title": "Article: The Importance of Sleep for Academic Performance",
+      "content_type": "Article",
+      "description": "How sleep quality affects learning, memory and grades.",
+      "duration_minutes": 8,
+      "category": "Sleep",
+      "author": "Prof. Maria Lopez",
+      "recommended_for": ["All Faculties","Sophomore","Junior"]
+    },
+    {
+      "id": "wcContent9",
+      "title": "Guide: Balanced Nutrition Meal Plan",
+      "content_type": "Guide",
+      "description": "7-day meal plan designed for students with busy schedules.",
+      "duration_minutes": 20,
+      "category": "Nutrition",
+      "author": "Dietitian Neil Harris",
+      "recommended_for": ["All Faculties","Freshman","Sophomore"]
+    },
+    {
+      "id": "wcContent10",
+      "title": "Video: Desk Stretching Routine",
+      "content_type": "Video",
+      "description": "5-minute routine you can do between lectures to stay active.",
+      "duration_minutes": 5,
+      "category": "Fitness",
+      "author": "ActiveCampus Team",
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    }
+  ],
+
+  "wellness_activities": [
+    {
+      "id": "activity1",
+      "title": "Morning Meditation",
+      "activity_type": "Meditation",
+      "duration_minutes": 10,
+      "difficulty_level": "Beginner",
+      "description": "A quiet 10-minute meditation to start your day calmly.",
+      "benefits": ["reduces stress","improves focus","sets positive tone"],
+      "equipment_needed": "None"
+    },
+    {
+      "id": "activity2",
+      "title": "Campus Yoga Flow",
+      "activity_type": "Yoga",
+      "duration_minutes": 20,
+      "difficulty_level": "Intermediate",
+      "description": "Flowing yoga session you can do in the lounge or outdoors.",
+      "benefits": ["flexibility","stress relief","mind-body connection"],
+      "equipment_needed": ["yoga mat"]
+    },
+    {
+      "id": "activity3",
+      "title": "HIIT Quick Workout",
+      "activity_type": "Workout",
+      "duration_minutes": 15,
+      "difficulty_level": "Advanced",
+      "description": "High-intensity interval training to fit into busy student schedules.",
+      "benefits": ["cardio fitness","calorie burn","endurance"],
+      "equipment_needed": ["dumbbells","mat"]
+    },
+    {
+      "id": "activity4",
+      "title": "Guided Breathing Session",
+      "activity_type": "Breathing Exercise",
+      "duration_minutes": 5,
+      "difficulty_level": "Beginner",
+      "description": "Simple breathing pattern to calm the mind before exams.",
+      "benefits": ["reduces anxiety","improves concentration","relaxation"],
+      "equipment_needed": "None"
+    },
+    {
+      "id": "activity5",
+      "title": "Evening Stretch Routine",
+      "activity_type": "Workout",
+      "duration_minutes": 12,
+      "difficulty_level": "Beginner",
+      "description": "Light stretching to unwind after a long day of classes.",
+      "benefits": ["muscle recovery","flexibility","better sleep"],
+      "equipment_needed": ["mat"]
+    },
+    {
+      "id": "activity6",
+      "title": "Sunrise Jog",
+      "activity_type": "Workout",
+      "duration_minutes": 25,
+      "difficulty_level": "Intermediate",
+      "description": "Start your day with a brisk jog around campus.",
+      "benefits": ["cardio health","energy boost","mood improvement"],
+      "equipment_needed": ["running shoes"]
+    },
+    {
+      "id": "activity7",
+      "title": "Mindful Art Session",
+      "activity_type": "Meditation",
+      "duration_minutes": 30,
+      "difficulty_level": "Intermediate",
+      "description": "Use art drawing as a meditative practice to lower stress.",
+      "benefits": ["creativity","stress relief","mindfulness"],
+      "equipment_needed": ["sketch pad","pencils"]
+    },
+    {
+      "id": "activity8",
+      "title": "Power Yoga Blast",
+      "activity_type": "Yoga",
+      "duration_minutes": 30,
+      "difficulty_level": "Advanced",
+      "description": "Power yoga session to build strength and endurance.",
+      "benefits": ["stamina","core strength","stress reduction"],
+      "equipment_needed": ["yoga mat"]
+    },
+    {
+      "id": "activity9",
+      "title": "Desk-Break Breathing",
+      "activity_type": "Breathing Exercise",
+      "duration_minutes": 3,
+      "difficulty_level": "Beginner",
+      "description": "Quick 3-minute breathing break during study sessions.",
+      "benefits": ["refreshes mind","improves circulation","focus boost"],
+      "equipment_needed": "None"
+    },
+    {
+      "id": "activity10",
+      "title": "Group Fitness Class",
+      "activity_type": "Workout",
+      "duration_minutes": 45,
+      "difficulty_level": "Intermediate",
+      "description": "Join a group fitness class on campus for an energetic workout.",
+      "benefits": ["social connection","fitness","motivation"],
+      "equipment_needed": ["gym clothes","water bottle"]
+    }
+  ],
+
+  "opportunities": [
+    {
+      "id": "opp1",
+      "title": "Summer Internship – Software Developer",
+      "type": "Internship",
+      "organization": "Tech Innovators Inc.",
+      "description": "3-month summer internship building web applications.",
+      "location": "Remote",
+      "deadline": "2025-12-15",
+      "recommended_for": ["Engineering","Junior","Senior"],
+      "application_link": "https://example.com/apply1"
+    },
+    {
+      "id": "opp2",
+      "title": "Market Research Volunteer Role",
+      "type": "Volunteer",
+      "organization": "Business Insights NGO",
+      "description": "Assist with consumer research and survey analysis.",
+      "location": "City Center",
+      "deadline": "2025-11-30",
+      "recommended_for": ["Business","Sophomore","Junior"],
+      "application_link": "https://example.com/apply2"
+    },
+    {
+      "id": "opp3",
+      "title": "Undergraduate Research Assistant – Biology",
+      "type": "Research",
+      "organization": "University Science Lab",
+      "description": "Join a biology research group for the semester.",
+      "location": "On-campus",
+      "deadline": "2025-10-31",
+      "recommended_for": ["Science","Junior","Senior"],
+      "application_link": "https://example.com/apply3"
+    },
+    {
+      "id": "opp4",
+      "title": "Part-time Tutor for First-Year Students",
+      "type": "Part-time Job",
+      "organization": "Campus Learning Center",
+      "description": "Tutor freshman students in general chemistry twice weekly.",
+      "location": "On-campus",
+      "deadline": "2025-11-15",
+      "recommended_for": ["Science","Sophomore","Junior"],
+      "application_link": "https://example.com/apply4"
+    },
+    {
+      "id": "opp5",
+      "title": "Healthcare Innovation Internship",
+      "type": "Internship",
+      "organization": "HealthTech Start-up",
+      "description": "Work on prototype healthcare devices and data analytics.",
+      "location": "Remote",
+      "deadline": "2026-01-10",
+      "recommended_for": ["Medicine","Engineering","Junior","Senior"],
+      "application_link": "https://example.com/apply5"
+    },
+    {
+      "id": "opp6",
+      "title": "Graphic Design Volunteer for Campus Magazine",
+      "type": "Volunteer",
+      "organization": "Campus Creative Club",
+      "description": "Design layouts and visuals for monthly student magazine.",
+      "location": "On-campus",
+      "deadline": "2025-12-05",
+      "recommended_for": ["Arts","Freshman","Sophomore"],
+      "application_link": "https://example.com/apply6"
+    },
+    {
+      "id": "opp7",
+      "title": "Business Strategy Part-time Consultant Role",
+      "type": "Part-time Job",
+      "organization": "Small Business Advisory",
+      "description": "Help local small businesses with strategy over weekends.",
+      "location": "City Center",
+      "deadline": "2026-02-20",
+      "recommended_for": ["Business","Senior"],
+      "application_link": "https://example.com/apply7"
+    },
+    {
+      "id": "opp8",
+      "title": "Media Production Internship",
+      "type": "Internship",
+      "organization": "Campus Media House",
+      "description": "Assist video production and editing for campus events.",
+      "location": "On-campus",
+      "deadline": "2025-11-22",
+      "recommended_for": ["Arts","Junior","Senior"],
+      "application_link": "https://example.com/apply8"
+    },
+    {
+      "id": "opp9",
+      "title": "Environmental Research Volunteer Project",
+      "type": "Volunteer",
+      "organization": "Green Earth NGO",
+      "description": "Work on field data collection and analysis for environmental studies.",
+      "location": "City Outskirts",
+      "deadline": "2026-03-01",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "application_link": "https://example.com/apply9"
+    },
+    {
+      "id": "opp10",
+      "title": "Sales Intern – Retail Chain",
+      "type": "Internship",
+      "organization": "Retail World Ltd.",
+      "description": "Part-time sales intern role in retail chain over holiday season.",
+      "location": "City Center",
+      "deadline": "2025-11-10",
+      "recommended_for": ["Business","Junior","Senior"],
+      "application_link": "https://example.com/apply10"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "event1",
+      "title": "Career Fair 2025",
+      "event_type": "Career Fair",
+      "date": "2025-11-20",
+      "time": "10:00 AM",
+      "location": "Main Auditorium",
+      "description": "Meet employers and learn about job/internship opportunities.",
+      "organizer": "University Career Services",
+      "capacity": 500,
+      "registered_count": 230,
+      "recommended_for": ["All Faculties","Junior","Senior"]
+    },
+    {
+      "id": "event2",
+      "title": "Hackathon Weekend",
+      "event_type": "Competition",
+      "date": "2025-12-05",
+      "time": "08:00 AM",
+      "location": "Engineering Block",
+      "description": "48-hour coding challenge open to students of all levels.",
+      "organizer": "Engineering Club",
+      "capacity": 120,
+      "registered_count": 60,
+      "recommended_for": ["Engineering","Sophomore","Junior","Senior"]
+    },
+    {
+      "id": "event3",
+      "title": "Design Portfolio Workshop",
+      "event_type": "Workshop",
+      "date": "2025-11-15",
+      "time": "01:00 PM",
+      "location": "Design Lab",
+      "description": "Workshop to help arts and media students build their portfolios.",
+      "organizer": "Design Department",
+      "capacity": 40,
+      "registered_count": 22,
+      "recommended_for": ["Arts","Freshman","Sophomore"]
+    },
+    {
+      "id": "event4",
+      "title": "Mental Health Seminar",
+      "event_type": "Seminar",
+      "date": "2025-12-10",
+      "time": "03:00 PM",
+      "location": "Student Wellness Center",
+      "description": "Seminar on student mental wellness and resilience strategies.",
+      "organizer": "Student Wellness Hub",
+      "capacity": 150,
+      "registered_count": 95,
+      "recommended_for": ["All Faculties","Freshman","Sophomore","Junior"]
+    },
+    {
+      "id": "event5",
+      "title": "Entrepreneur Pitch Night",
+      "event_type": "Social",
+      "date": "2025-11-30",
+      "time": "07:00 PM",
+      "location": "Business School Auditorium",
+      "description": "Students pitch business ideas and network with investors.",
+      "organizer": "Business Innovation Centre",
+      "capacity": 80,
+      "registered_count": 45,
+      "recommended_for": ["Business","Junior","Senior"]
+    },
+    {
+      "id": "event6",
+      "title": "Science Research Symposium",
+      "event_type": "Seminar",
+      "date": "2025-12-18",
+      "time": "09:00 AM",
+      "location": "Science Hall",
+      "description": "Undergraduate science students present research posters.",
+      "organizer": "Science Faculty",
+      "capacity": 100,
+      "registered_count": 70,
+      "recommended_for": ["Science","Junior","Senior"]
+    },
+    {
+      "id": "event7",
+      "title": "Yoga & Mindfulness Evening",
+      "event_type": "Workshop",
+      "date": "2025-11-12",
+      "time": "05:30 PM",
+      "location": "Campus Gym",
+      "description": "Join a relaxing session of yoga and mindfulness after classes.",
+      "organizer": "Wellness Team",
+      "capacity": 60,
+      "registered_count": 38,
+      "recommended_for": ["All Faculties","Freshman","Sophomore"]
+    },
+    {
+      "id": "event8",
+      "title": "Business Strategy Competition",
+      "event_type": "Competition",
+      "date": "2025-12-06",
+      "time": "02:00 PM",
+      "location": "Business School Case Room",
+      "description": "Teams compete solving real business case studies.",
+      "organizer": "Business Club",
+      "capacity": 30,
+      "registered_count": 18,
+      "recommended_for": ["Business","Senior"]
+    },
+    {
+      "id": "event9",
+      "title": "Social Mixer – Freshman Welcome",
+      "event_type": "Social",
+      "date": "2025-11-08",
+      "time": "06:00 PM",
+      "location": "Student Lounge",
+      "description": "Welcome event for new students to mingle and make friends.",
+      "organizer": "Student Union",
+      "capacity": 200,
+      "registered_count": 150,
+      "recommended_for": ["All Faculties","Freshman"]
+    },
+    {
+      "id": "event10",
+      "title": "UX & Design Hack Workshop",
+      "event_type": "Workshop",
+      "date": "2025-12-02",
+      "time": "10:00 AM",
+      "location": "Design Studio",
+      "description": "Hands-on design sprint for students interested in UX.",
+      "organizer": "Design Club",
+      "capacity": 50,
+      "registered_count": 28,
+      "recommended_for": ["Arts","Engineering","Sophomore","Junior"]
+    }
+  ],
+
+  "scholarships": [
+    {
+      "id": "sch1",
+      "title": "Engineering Excellence Scholarship",
+      "amount": 3000,
+      "provider": "Engineering Alumni Fund",
+      "description": "Scholarship for top engineering students showing both academics and leadership.",
+      "eligibility_criteria": ["Engineering faculty","GPA > 3.5","Junior or Senior"],
+      "deadline": "2026-02-01",
+      "application_link": "https://example.com/sch1",
+      "recommended_for": ["Engineering","Junior","Senior"],
+      "requirements": ["Transcript","Leadership essay","Recommendation letter"]
+    },
+    {
+      "id": "sch2",
+      "title": "Business Leaders Grant",
+      "amount": 2000,
+      "provider": "Business School Foundation",
+      "description": "Support for business students with entrepreneurial projects.",
+      "eligibility_criteria": ["Business faculty","Sophomore or Junior","Own business idea"],
+      "deadline": "2026-01-15",
+      "application_link": "https://example.com/sch2",
+      "recommended_for": ["Business","Sophomore","Junior"],
+      "requirements": ["Project proposal","Financial plan","Interview"]
+    },
+    {
+      "id": "sch3",
+      "title": "Arts Creative Award",
+      "amount": 1500,
+      "provider": "Arts & Media Endowment",
+      "description": "Grant for arts students working on a creative media project.",
+      "eligibility_criteria": ["Arts faculty","Any grade","Portfolio required"],
+      "deadline": "2025-12-20",
+      "application_link": "https://example.com/sch3",
+      "recommended_for": ["Arts","Freshman","Sophomore","Junior","Senior"],
+      "requirements": ["Portfolio","Statement of intent","Faculty endorsement"]
+    },
+    {
+      "id": "sch4",
+      "title": "Science Research Scholarship",
+      "amount": 2500,
+      "provider": "Science Research Fund",
+      "description": "Award for science students doing undergraduate research.",
+      "eligibility_criteria": ["Science faculty","Junior or Senior","Research proposal"],
+      "deadline": "2026-03-10",
+      "application_link": "https://example.com/sch4",
+      "recommended_for": ["Science","Junior","Senior"],
+      "requirements": ["Proposal","Faculty mentor","Report"]
+    },
+    {
+      "id": "sch5",
+      "title": "Medicine Future Leaders Scholarship",
+      "amount": 5000,
+      "provider": "Medical School Trust",
+      "description": "Support for outstanding medical students pursuing innovation in healthcare.",
+      "eligibility_criteria": ["Medicine faculty","Junior or Senior","Leadership experience"],
+      "deadline": "2026-04-01",
+      "application_link": "https://example.com/sch5",
+      "recommended_for": ["Medicine","Junior","Senior"],
+      "requirements": ["Essay","Interview","Clinical volunteer hours"]
+    },
+    {
+      "id": "sch6",
+      "title": "Global Study Grant",
+      "amount": 1800,
+      "provider": "International Education Fund",
+      "description": "Grant for students across faculties to study abroad for a semester.",
+      "eligibility_criteria": ["Any faculty","Sophomore or Junior","Good academic standing"],
+      "deadline": "2026-01-30",
+      "application_link": "https://example.com/sch6",
+      "recommended_for": ["All Faculties","Sophomore","Junior"],
+      "requirements": ["Transcript","Study abroad plan","Budget"]
+    },
+    {
+      "id": "sch7",
+      "title": "Leadership in Technology Award",
+      "amount": 2200,
+      "provider": "Tech Leaders Foundation",
+      "description": "Award for students leading tech initiatives on campus.",
+      "eligibility_criteria": ["Engineering or Science faculty","Junior or Senior","Tech project led"],
+      "deadline": "2026-02-20",
+      "application_link": "https://example.com/sch7",
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "requirements": ["Project summary","Team lead description","Recommendation"]
+    },
+    {
+      "id": "sch8",
+      "title": "Creative Media Scholarship",
+      "amount": 1700,
+      "provider": "Media Arts Fund",
+      "description": "For media and arts students working on innovative media campaigns.",
+      "eligibility_criteria": ["Arts faculty","Junior or Senior","Media project"],
+      "deadline": "2026-03-15",
+      "application_link": "https://example.com/sch8",
+      "recommended_for": ["Arts","Junior","Senior"],
+      "requirements": ["Media portfolio","Budget plan","Presentation"]
+    },
+    {
+      "id": "sch9",
+      "title": "Entrepreneurship Seed Grant",
+      "amount": 2500,
+      "provider": "Campus Innovation Lab",
+      "description": "Seed funding for student-run start-ups across any faculty.",
+      "eligibility_criteria": ["Any faculty","Sophomore or Junior","Business plan submitted"],
+      "deadline": "2026-04-10",
+      "application_link": "https://example.com/sch9",
+      "recommended_for": ["All Faculties","Sophomore","Junior"],
+      "requirements": ["Business plan","Pitch deck","Team profile"]
+    },
+    {
+      "id": "sch10",
+      "title": "Sustainability Research Award",
+      "amount": 2300,
+      "provider": "Green Campus Initiative",
+      "description": "For students who propose sustainability or environmental research on campus.",
+      "eligibility_criteria": ["Science or Engineering faculty","Junior or Senior","Sustainability project"],
+      "deadline": "2026-05-01",
+      "application_link": "https://example.com/sch10",
+      "recommended_for": ["Science","Engineering","Junior","Senior"],
+      "requirements": ["Project proposal","Faculty endorsement","Presentation"]
+    }
+  ],
+
+  "confessions": [
+    {
+      "id": "conf1",
+      "content": "I skipped my classes for a week and now I’m terrified I’ll fail mid-terms.",
+      "category": "Academic Stress",
+      "likes_count": 45,
+      "comment_count": 10,
+      "posted_date": "2025-10-20",
+      "is_anonymous": true,
+      "related_tags": ["skipped classes","midterms","panic"]
+    },
+    {
+      "id": "conf2",
+      "content": "I feel like I don’t belong in my group of friends anymore—they’ve changed and I’m left out.",
+      "category": "Social Life",
+      "likes_count": 30,
+      "comment_count": 8,
+      "posted_date": "2025-10-18",
+      "is_anonymous": true,
+      "related_tags": ["friendship","left out","campus life"]
+    },
+    {
+      "id": "conf3",
+      "content": "I’m majoring in business because of the pressure—but I really want to study art instead.",
+      "category": "Career Anxiety",
+      "likes_count": 60,
+      "comment_count": 12,
+      "posted_date": "2025-10-22",
+      "is_anonymous": true,
+      "related_tags": ["major regret","career path","arts vs business"]
+    },
+    {
+      "id": "conf4",
+      "content": "Every time an assignment comes I freeze—my anxiety takes over and I can’t start.",
+      "category": "Mental Health",
+      "likes_count": 80,
+      "comment_count": 20,
+      "posted_date": "2025-10-19",
+      "is_anonymous": true,
+      "related_tags": ["anxiety","assignment","freeze"]
+    },
+    {
+      "id": "conf5",
+      "content": "My parents expect me to get a 4.0 GPA but I’m struggling with the workload and burn out.",
+      "category": "Academic Stress",
+      "likes_count": 55,
+      "comment_count": 15,
+      "posted_date": "2025-10-21",
+      "is_anonymous": true,
+      "related_tags": ["parental pressure","burn out","gpa"]
+    },
+    {
+      "id": "conf6",
+      "content": "I volunteered for a club just to look good on my resume but now I dread going there every week.",
+      "category": "Career Anxiety",
+      "likes_count": 25,
+      "comment_count": 5,
+      "posted_date": "2025-10-17",
+      "is_anonymous": true,
+      "related_tags": ["resume building","volunteer regret","club pressure"]
+    },
+    {
+      "id": "conf7",
+      "content": "I don’t connect with any student groups on campus and feel really lonely sometimes.",
+      "category": "Social Life",
+      "likes_count": 35,
+      "comment_count": 9,
+      "posted_date": "2025-10-16",
+      "is_anonymous": true,
+      "related_tags": ["loneliness","student groups","campus"]
+    },
+    {
+      "id": "conf8",
+      "content": "I keep telling myself I’ll go to the gym tomorrow, but tomorrow never comes.",
+      "category": "Health",
+      "likes_count": 40,
+      "comment_count": 7,
+      "posted_date": "2025-10-15",
+      "is_anonymous": true,
+      "related_tags": ["gym procrastination","fitness struggle","student life"]
+    },
+    {
+      "id": "conf9",
+      "content": "I’m terrified I’ll never figure out what I want to do with my life after college.",
+      "category": "Career Anxiety",
+      "likes_count": 70,
+      "comment_count": 18,
+      "posted_date": "2025-10-14",
+      "is_anonymous": true,
+      "related_tags": ["future fear","career path","post-grad"]
+    },
+    {
+      "id": "conf10",
+      "content": "I feel competent in class but as soon as someone asks a question I freeze and my mind goes blank.",
+      "category": "Academic Stress",
+      "likes_count": 50,
+      "comment_count": 11,
+      "posted_date": "2025-10-13",
+      "is_anonymous": true,
+      "related_tags": ["public speaking","class participation","anxiety"]
+    }
+  ],
+
+  "flashcards": [
+    {
+      "id": "fc1",
+      "title": "Python Basics Flashcards",
+      "subject": "Programming",
+      "card_count": 30,
+      "description": "Flashcards covering Python syntax, data types and control flow.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dr. Ayesha Khan",
+      "category": "Programming",
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"],
+      "tags": ["python","flashcards","programming basics"]
+    },
+    {
+      "id": "fc2",
+      "title": "Excel Formulas Flashcards",
+      "subject": "Business",
+      "card_count": 25,
+      "description": "Flashcards for key Excel formulas used in business analysis.",
+      "difficulty_level": "Beginner",
+      "created_by": "Mr. Brian Lee",
+      "category": "Business",
+      "recommended_for": ["Business","Freshman","Sophomore"],
+      "tags": ["excel","formulas","business tools"]
+    },
+    {
+      "id": "fc3",
+      "title": "Machine Learning Terms Flashcards",
+      "subject": "Programming",
+      "card_count": 40,
+      "description": "Flashcards covering important terms in machine learning and AI.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Dr. Emily Zhao",
+      "category": "Programming",
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "tags": ["machine learning","ai","glossary"]
+    },
+    {
+      "id": "fc4",
+      "title": "Chemistry Reaction Flashcards",
+      "subject": "Science",
+      "card_count": 28,
+      "description": "Flashcards focusing on chemical reactions and mechanisms.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dr. Frank Müller",
+      "category": "Science",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "tags": ["chemistry","reactions","science fundamentals"]
+    },
+    {
+      "id": "fc5",
+      "title": "UX Research Flashcards",
+      "subject": "Design",
+      "card_count": 35,
+      "description": "Flashcards on UX research methods and terminology.",
+      "difficulty_level": "Advanced",
+      "created_by": "Prof. Ian Thompson",
+      "category": "Design",
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "tags": ["ux","research","design thinking"]
+    },
+    {
+      "id": "fc6",
+      "title": "Nutrition Basics Flashcards",
+      "subject": "Health",
+      "card_count": 20,
+      "description": "Flashcards introducing student friendly nutrition concepts.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dietitian Neil Harris",
+      "category": "Health",
+      "recommended_for": ["All Faculties","Freshman","Sophomore"],
+      "tags": ["nutrition","wellness","student health"]
+    },
+    {
+      "id": "fc7",
+      "title": "Branding & Media Flashcards",
+      "subject": "Business",
+      "card_count": 30,
+      "description": "Flashcards covering key branding and media marketing terms.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Ms. Carla Martín",
+      "category": "Business",
+      "recommended_for": ["Arts","Business","Junior","Senior"],
+      "tags": ["branding","media","marketing"]
+    },
+    {
+      "id": "fc8",
+      "title": "Physics Concepts Flashcards",
+      "subject": "Science",
+      "card_count": 32,
+      "description": "Flashcards for first-year physics topics like kinematics and energy.",
+      "difficulty_level": "Beginner",
+      "created_by": "Dr. Frank Müller",
+      "category": "Science",
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "tags": ["physics","kinematics","energy"]
+    },
+    {
+      "id": "fc9",
+      "title": "Time Management Flashcards",
+      "subject": "Business",
+      "card_count": 18,
+      "description": "Flashcards giving tips and definitions for effective time management.",
+      "difficulty_level": "Beginner",
+      "created_by": "Mr. Jack Nguyen",
+      "category": "Business",
+      "recommended_for": ["All Faculties","Junior","Senior"],
+      "tags": ["productivity","time management","study skills"]
+    },
+    {
+      "id": "fc10",
+      "title": "Design Thinking Flashcards",
+      "subject": "Design",
+      "card_count": 22,
+      "description": "Flashcards covering design thinking phases and core tools.",
+      "difficulty_level": "Intermediate",
+      "created_by": "Prof. David Sun",
+      "category": "Design",
+      "recommended_for": ["Arts","Engineering","Sophomore","Junior"],
+      "tags": ["design thinking","innovation","creative process"]
+    }
+  ],
+
+  "qna": [
+    {
+      "id": "qna1",
+      "question": "How do I choose between Electrical and Computer Engineering?",
+      "answer_count": 4,
+      "views": 120,
+      "category": "Academic",
+      "tags": ["engineering choice","major decision","ece vs ee"],
+      "posted_by": "student123",
+      "is_resolved": false,
+      "posted_date": "2025-10-15"
+    },
+    {
+      "id": "qna2",
+      "question": "What are good ways to build a LinkedIn profile as a sophomore business student?",
+      "answer_count": 2,
+      "views": 85,
+      "category": "Career",
+      "tags": ["linkedin","business student","resume"],
+      "posted_by": "anon_user",
+      "is_resolved": true,
+      "posted_date": "2025-10-18"
+    },
+    {
+      "id": "qna3",
+      "question": "How can I join the campus design club if I'm a freshman in arts faculty?",
+      "answer_count": 3,
+      "views": 60,
+      "category": "Campus Life",
+      "tags": ["design club","arts freshman","campus involvement"],
+      "posted_by": "artlover",
+      "is_resolved": true,
+      "posted_date": "2025-10-17"
+    },
+    {
+      "id": "qna4",
+      "question": "What’s the best way to prepare for mid-term chemistry exams?",
+      "answer_count": 5,
+      "views": 150,
+      "category": "Academic",
+      "tags": ["chemistry study","midterms","science freshman"],
+      "posted_by": "science_guy",
+      "is_resolved": false,
+      "posted_date": "2025-10-14"
+    },
+    {
+      "id": "qna5",
+      "question": "Do internships matter more than GPA in business school?",
+      "answer_count": 3,
+      "views": 95,
+      "category": "Career",
+      "tags": ["internships","gpa","business school"],
+      "posted_by": "bizstudent",
+      "is_resolved": false,
+      "posted_date": "2025-10-19"
+    },
+    {
+      "id": "qna6",
+      "question": "Is it too late to learn UX design in my senior year?",
+      "answer_count": 2,
+      "views": 40,
+      "category": "Technical",
+      "tags": ["ux design","senior year","arts engineering"],
+      "posted_by": "designseeker",
+      "is_resolved": true,
+      "posted_date": "2025-10-20"
+    },
+    {
+      "id": "qna7",
+      "question": "How do I balance part-time job and full-time study in my medicine faculty?",
+      "answer_count": 4,
+      "views": 55,
+      "category": "Campus Life",
+      "tags": ["medicine student","time balance","part time job"],
+      "posted_by": "medstudent",
+      "is_resolved": false,
+      "posted_date": "2025-10-16"
+    },
+    {
+      "id": "qna8",
+      "question": "What are effective ways to network as an arts student?",
+      "answer_count": 1,
+      "views": 30,
+      "category": "Career",
+      "tags": ["arts student","networking","creative careers"],
+      "posted_by": "creative1",
+      "is_resolved": false,
+      "posted_date": "2025-10-21"
+    },
+    {
+      "id": "qna9",
+      "question": "Can I switch my major from science to engineering mid-year?",
+      "answer_count": 3,
+      "views": 70,
+      "category": "Academic",
+      "tags": ["major change","science to engineering","faculty switch"],
+      "posted_by": "curiousStudent",
+      "is_resolved": true,
+      "posted_date": "2025-10-12"
+    },
+    {
+      "id": "qna10",
+      "question": "What’s the typical interview process for tech internships?",
+      "answer_count": 5,
+      "views": 130,
+      "category": "Career",
+      "tags": ["tech internship","interview process","engineering"],
+      "posted_by": "techhopeful",
+      "is_resolved": true,
+      "posted_date": "2025-10-11"
+    }
+  ],
+
+  "true_false": [
+    {
+      "id": "tf1",
+      "title": "Python Syntax True/False Set",
+      "subject": "Programming",
+      "question_count": 20,
+      "difficulty_level": "Beginner",
+      "description": "Practice true/false statements about Python syntax and semantics.",
+      "time_limit_minutes": 15,
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"],
+      "topics_covered": ["variables","loops","functions"]
+    },
+    {
+      "id": "tf2",
+      "title": "Excel Basic Functions True/False",
+      "subject": "Business",
+      "question_count": 18,
+      "difficulty_level": "Beginner",
+      "description": "True or false questions on basic Excel functions for business use.",
+      "time_limit_minutes": 12,
+      "recommended_for": ["Business","Freshman","Sophomore"],
+      "topics_covered": ["sum","vlookup","charts"]
+    },
+    {
+      "id": "tf3",
+      "title": "Machine Learning Concepts True/False",
+      "subject": "Programming",
+      "question_count": 25,
+      "difficulty_level": "Intermediate",
+      "description": "Evaluate true/false statements on key machine learning ideas.",
+      "time_limit_minutes": 20,
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "topics_covered": ["regression","classification","overfitting"]
+    },
+    {
+      "id": "tf4",
+      "title": "Chemistry Fundamentals True/False",
+      "subject": "Science",
+      "question_count": 22,
+      "difficulty_level": "Beginner",
+      "description": "True or false questions about basic chemistry topics for first-year students.",
+      "time_limit_minutes": 18,
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["chemical reactions","periodic table","stoichiometry"]
+    },
+    {
+      "id": "tf5",
+      "title": "UX Research True/False",
+      "subject": "Design",
+      "question_count": 20,
+      "difficulty_level": "Advanced",
+      "description": "True/false questions on UX research and methodology for advanced students.",
+      "time_limit_minutes": 15,
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "topics_covered": ["user testing","interviews","usability"]
+    },
+    {
+      "id": "tf6",
+      "title": "Nutrition & Wellness True/False",
+      "subject": "Health",
+      "question_count": 15,
+      "difficulty_level": "Beginner",
+      "description": "True or false questions focused on student nutrition and wellness habits.",
+      "time_limit_minutes": 10,
+      "recommended_for": ["All Faculties","Freshman","Sophomore"],
+      "topics_covered": ["hydration","meal planning","macros"]
+    },
+    {
+      "id": "tf7",
+      "title": "Business Strategy True/False",
+      "subject": "Business",
+      "question_count": 21,
+      "difficulty_level": "Intermediate",
+      "description": "True/false set about business strategy fundamentals.",
+      "time_limit_minutes": 14,
+      "recommended_for": ["Business","Junior","Senior"],
+      "topics_covered": ["market analysis","competitive advantage","business model"]
+    },
+    {
+      "id": "tf8",
+      "title": "Physics I True/False",
+      "subject": "Science",
+      "question_count": 24,
+      "difficulty_level": "Beginner",
+      "description": "True or false questions covering kinematics and basic physics for freshmen.",
+      "time_limit_minutes": 20,
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["motion","forces","energy"]
+    },
+    {
+      "id": "tf9",
+      "title": "Design Thinking True/False",
+      "subject": "Design",
+      "question_count": 17,
+      "difficulty_level": "Intermediate",
+      "description": "Evaluate statements about design thinking phases and tools.",
+      "time_limit_minutes": 13,
+      "recommended_for": ["Arts","Engineering","Sophomore","Junior"],
+      "topics_covered": ["empathize","ideate","prototype"]
+    },
+    {
+      "id": "tf10",
+      "title": "Time Management True/False",
+      "subject": "Business",
+      "question_count": 16,
+      "difficulty_level": "Beginner",
+      "description": "True/false questions about effective time-management and productivity.",
+      "time_limit_minutes": 10,
+      "recommended_for": ["All Faculties","Junior","Senior"],
+      "topics_covered": ["prioritization","planning","habits"]
+    }
+  ],
+
+  "mcq": [
+    {
+      "id": "mcq1",
+      "title": "Python Basics MCQ Set",
+      "subject": "Programming",
+      "question_count": 30,
+      "difficulty_level": "Beginner",
+      "description": "Multiple choice questions on Python basics for new programmers.",
+      "time_limit_minutes": 30,
+      "recommended_for": ["Engineering","Science","Freshman","Sophomore"],
+      "topics_covered": ["syntax","data types","loops"],
+      "pass_percentage": 70
+    },
+    {
+      "id": "mcq2",
+      "title": "Excel Business MCQ Set",
+      "subject": "Business",
+      "question_count": 28,
+      "difficulty_level": "Beginner",
+      "description": "MCQs about Excel use in business scenarios.",
+      "time_limit_minutes": 25,
+      "recommended_for": ["Business","Freshman","Sophomore"],
+      "topics_covered": ["functions","charts","data entry"],
+      "pass_percentage": 75
+    },
+    {
+      "id": "mcq3",
+      "title": "Machine Learning MCQ Challenge",
+      "subject": "Programming",
+      "question_count": 35,
+      "difficulty_level": "Intermediate",
+      "description": "MCQs on machine learning algorithms and application scenarios.",
+      "time_limit_minutes": 40,
+      "recommended_for": ["Engineering","Science","Junior","Senior"],
+      "topics_covered": ["classification","clustering","neural networks"],
+      "pass_percentage": 65
+    },
+    {
+      "id": "mcq4",
+      "title": "Chemistry Fundamentals MCQ Set",
+      "subject": "Science",
+      "question_count": 26,
+      "difficulty_level": "Beginner",
+      "description": "MCQs for first-year chemistry topics.",
+      "time_limit_minutes": 30,
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["periodic table","reactions","stoichiometry"],
+      "pass_percentage": 70
+    },
+    {
+      "id": "mcq5",
+      "title": "UX Research MCQ Set",
+      "subject": "Design",
+      "question_count": 24,
+      "difficulty_level": "Advanced",
+      "description": "MCQs on user research theory and methods.",
+      "time_limit_minutes": 30,
+      "recommended_for": ["Arts","Engineering","Senior"],
+      "topics_covered": ["usability testing","interviews","data analysis"],
+      "pass_percentage": 60
+    },
+    {
+      "id": "mcq6",
+      "title": "Nutrition Knowledge MCQ",
+      "subject": "Health",
+      "question_count": 20,
+      "difficulty_level": "Beginner",
+      "description": "MCQs about nutrition and healthy habits for students.",
+      "time_limit_minutes": 20,
+      "recommended_for": ["All Faculties","Freshman","Sophomore"],
+      "topics_covered": ["macros","meal planning","hydration"],
+      "pass_percentage": 80
+    },
+    {
+      "id": "mcq7",
+      "title": "Business Strategy MCQ Set",
+      "subject": "Business",
+      "question_count": 22,
+      "difficulty_level": "Intermediate",
+      "description": "MCQs on strategy, business models and competitive analysis.",
+      "time_limit_minutes": 25,
+      "recommended_for": ["Business","Junior","Senior"],
+      "topics_covered": ["strategy","business model","market analysis"],
+      "pass_percentage": 65
+    },
+    {
+      "id": "mcq8",
+      "title": "Physics I MCQ Set",
+      "subject": "Science",
+      "question_count": 30,
+      "difficulty_level": "Beginner",
+      "description": "MCQs for first-year physics covering kinematics and energy.",
+      "time_limit_minutes": 35,
+      "recommended_for": ["Science","Freshman","Sophomore"],
+      "topics_covered": ["motion","forces","energy"],
+      "pass_percentage": 70
+    },
+    {
+      "id": "mcq9",
+      "title": "Design Thinking MCQ Set",
+      "subject": "Design",
+      "question_count": 18,
+      "difficulty_level": "Intermediate",
+      "description": "MCQs on design thinking phases and methods.",
+      "time_limit_minutes": 20,
+      "recommended_for": ["Arts","Engineering","Sophomore","Junior"],
+      "topics_covered": ["empathize","ideate","prototype"],
+      "pass_percentage": 75
+    },
+    {
+      "id": "mcq10",
+      "title": "Time Management MCQ Set",
+      "subject": "Business",
+      "question_count": 16,
+      "difficulty_level": "Beginner",
+      "description": "MCQs covering productivity and study habit topics.",
+      "time_limit_minutes": 15,
+      "recommended_for": ["All Faculties","Junior","Senior"],
+      "topics_covered": ["prioritization","habits","planning"],
+      "pass_percentage": 85
+    }
+  ]
+}
